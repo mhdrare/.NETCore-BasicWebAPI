@@ -1,0 +1,14 @@
+/home/mhdrare/Documents/dotNet/BasicWebAPI/bin/Debug/netcoreapp2.2/BasicWebAPI.deps.json
+/home/mhdrare/Documents/dotNet/BasicWebAPI/bin/Debug/netcoreapp2.2/BasicWebAPI.runtimeconfig.json
+/home/mhdrare/Documents/dotNet/BasicWebAPI/bin/Debug/netcoreapp2.2/BasicWebAPI.runtimeconfig.dev.json
+/home/mhdrare/Documents/dotNet/BasicWebAPI/bin/Debug/netcoreapp2.2/BasicWebAPI.dll
+/home/mhdrare/Documents/dotNet/BasicWebAPI/bin/Debug/netcoreapp2.2/BasicWebAPI.pdb
+/home/mhdrare/Documents/dotNet/BasicWebAPI/obj/Debug/netcoreapp2.2/BasicWebAPI.csprojAssemblyReference.cache
+/home/mhdrare/Documents/dotNet/BasicWebAPI/obj/Debug/netcoreapp2.2/BasicWebAPI.csproj.CoreCompileInputs.cache
+/home/mhdrare/Documents/dotNet/BasicWebAPI/obj/Debug/netcoreapp2.2/BasicWebAPI.RazorAssemblyInfo.cache
+/home/mhdrare/Documents/dotNet/BasicWebAPI/obj/Debug/netcoreapp2.2/BasicWebAPI.RazorAssemblyInfo.cs
+/home/mhdrare/Documents/dotNet/BasicWebAPI/obj/Debug/netcoreapp2.2/BasicWebAPI.AssemblyInfoInputs.cache
+/home/mhdrare/Documents/dotNet/BasicWebAPI/obj/Debug/netcoreapp2.2/BasicWebAPI.AssemblyInfo.cs
+/home/mhdrare/Documents/dotNet/BasicWebAPI/obj/Debug/netcoreapp2.2/BasicWebAPI.RazorTargetAssemblyInfo.cache
+/home/mhdrare/Documents/dotNet/BasicWebAPI/obj/Debug/netcoreapp2.2/BasicWebAPI.dll
+/home/mhdrare/Documents/dotNet/BasicWebAPI/obj/Debug/netcoreapp2.2/BasicWebAPI.pdb

@@ -83,7 +83,8 @@ namespace BasicWebAPI.Controllers
                 Date = param.Date
             });
             await this.dbContext.SaveChangesAsync();
-            return StatusCode(StatusCodes.Status201Created);
+            // return StatusCode(StatusCodes.Status201Created);
+            return CreatedAtAction(nameof(Get), new {id = newId}, param);
         }
 
         [HttpPut("{id}")]
@@ -115,6 +116,19 @@ namespace BasicWebAPI.Controllers
                 return StatusCode(StatusCodes.Status404NotFound);
             }
             return selectedBook;
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<IEnumerable<BookView>>> Delete([FromRoute]int id)
+        {
+            var selectedBook = await dbContext.Books.SingleOrDefaultAsync(item => item.Id == id);
+            if (selectedBook == null)
+            {
+                return StatusCode(StatusCodes.Status404NotFound);
+            }
+            dbContext.Remove(selectedBook);
+            await this.dbContext.SaveChangesAsync();
+            return StatusCode(StatusCodes.Status200OK);
         }
     }
 }

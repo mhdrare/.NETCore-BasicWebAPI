@@ -101,22 +101,20 @@ namespace BasicWebAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<IEnumerable<BookView>>> Get([FromRoute]int id)
+        public async Task<ActionResult<BookView>> Get([FromRoute]int id)
         {
-            var dataSource = await dbContext.Books
+            var selectedBook = await dbContext.Books
+                .Where(book => book.Id == id)
                 .Select(book => new BookView {
-                    Id = book.Id,
                     Title = book.Title,
                     Date = book.Date
                 })
-                .ToListAsync();
-
-            var selectedBook = await dbContext.Books.SingleOrDefaultAsync(item => item.Id == id);
+                .SingleOrDefaultAsync();
             if (selectedBook == null)
             {
                 return StatusCode(StatusCodes.Status404NotFound);
             }
-            return dataSource.Where(item => item.Id == id).ToList();
+            return selectedBook;
         }
     }
 }

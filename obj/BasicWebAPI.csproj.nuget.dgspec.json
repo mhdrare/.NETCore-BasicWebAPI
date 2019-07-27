@@ -10,14 +10,14 @@
         "projectUniqueName": "/home/mhdrare/Documents/dotNet/BasicWebAPI/BasicWebAPI.csproj",
         "projectName": "BasicWebAPI",
         "projectPath": "/home/mhdrare/Documents/dotNet/BasicWebAPI/BasicWebAPI.csproj",
-        "packagesPath": "/root/.nuget/packages/",
+        "packagesPath": "/home/mhdrare/.nuget/packages/",
         "outputPath": "/home/mhdrare/Documents/dotNet/BasicWebAPI/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/root/.nuget/NuGet/NuGet.Config"
+          "/home/mhdrare/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"

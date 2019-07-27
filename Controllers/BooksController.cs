@@ -31,6 +31,24 @@ namespace BasicWebAPI.Controllers
                     Date = DateTime.UtcNow,
                     Title = "Hello There!"
                 });
+                this.dbContext.Books.Add(new Book
+                {
+                    Id = 2,
+                    Date = DateTime.UtcNow,
+                    Title = "Hello You!"
+                });
+                this.dbContext.Books.Add(new Book
+                {
+                    Id = 3,
+                    Date = DateTime.UtcNow,
+                    Title = "11:11"
+                });
+                this.dbContext.Books.Add(new Book
+                {
+                    Id = 4,
+                    Date = DateTime.UtcNow,
+                    Title = "Konspirasi Alam Semesta"
+                });
                 this.dbContext.SaveChanges();
             }
         }
@@ -80,6 +98,25 @@ namespace BasicWebAPI.Controllers
             selectedBook.Date = param.Date;
             await this.dbContext.SaveChangesAsync();
             return StatusCode(StatusCodes.Status200OK);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<IEnumerable<BookView>>> Get([FromRoute]int id)
+        {
+            var dataSource = await dbContext.Books
+                .Select(book => new BookView {
+                    Id = book.Id,
+                    Title = book.Title,
+                    Date = book.Date
+                })
+                .ToListAsync();
+
+            var selectedBook = await dbContext.Books.SingleOrDefaultAsync(item => item.Id == id);
+            if (selectedBook == null)
+            {
+                return StatusCode(StatusCodes.Status404NotFound);
+            }
+            return dataSource.Where(item => item.Id == id).ToList();
         }
     }
 }

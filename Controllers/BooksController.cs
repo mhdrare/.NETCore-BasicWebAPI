@@ -27,25 +27,21 @@ namespace BasicWebAPI.Controllers
             {
                 this.dbContext.Books.Add(new Book
                 {
-                    Id = 1,
                     Date = DateTime.UtcNow,
                     Title = "Hello There!"
                 });
                 this.dbContext.Books.Add(new Book
                 {
-                    Id = 2,
                     Date = DateTime.UtcNow,
                     Title = "Hello You!"
                 });
                 this.dbContext.Books.Add(new Book
                 {
-                    Id = 3,
                     Date = DateTime.UtcNow,
                     Title = "11:11"
                 });
                 this.dbContext.Books.Add(new Book
                 {
-                    Id = 4,
                     Date = DateTime.UtcNow,
                     Title = "Konspirasi Alam Semesta"
                 });
@@ -76,15 +72,13 @@ namespace BasicWebAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<IEnumerable<BookView>>> Post([FromBody] BookView param)
         {
-            var newId = await dbContext.Books.CountAsync() + 1;
-            dbContext.Add(new Book {
-                Id = newId,
+            var newBook = new Book {
                 Title = param.Title,
                 Date = param.Date
-            });
+            };
+            dbContext.Add(newBook);
             await this.dbContext.SaveChangesAsync();
-            // return StatusCode(StatusCodes.Status201Created);
-            return CreatedAtAction(nameof(Get), new {id = newId}, param);
+            return CreatedAtAction(nameof(Get), new {id = newBook.Id}, param);
         }
 
         [HttpPut("{id}")]

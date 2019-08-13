@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -27,7 +28,12 @@ namespace BasicWebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<BasicDbContext>(opt => opt.UseInMemoryDatabase("Basic"));
+            // services.AddDbContext<BasicDbContext>(opt => opt.UseInMemoryDatabase("Basic"));
+            services.AddEntityFrameworkNpgsql()
+                .AddDbContext<BasicDbContext>(
+                    opt => opt.UseNpgsql(Configuration["ConnectionString:Core"])
+                        .ConfigureWarnings(warning => warning.Throw(RelationalEventId.QueryClientEvaluationWarning))
+                );
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -40,6 +46,11 @@ namespace BasicWebAPI
             }
             else
             {
+                using (var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope()) 
+                {
+                    var context = serviceScope.ServiceProvider.GetService<BasicDbContext>();
+                    context.Database.Migrate();
+                }
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }

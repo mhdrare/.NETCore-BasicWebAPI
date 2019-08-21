@@ -11,4 +11,11 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="2.2.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Include="Dockerfile" CopyToPublishDirectory="PreserveNewest"/>
+    <Content Update="appsettings.json" CopyToPublishDirectory="PreserveNewest"/>
+    <Content Update="appsettings.*.json" CopyToPublishDirectory="PreserveNewest"/>
+    <Content Update="appsettings.$(MSBuildThisFileName).json" CopyToPublishDirectory="PreserveNewest"/>
+  </ItemGroup>
+
 </Project>

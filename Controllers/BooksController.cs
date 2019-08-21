@@ -87,7 +87,7 @@ namespace BasicWebAPI.Controllers
             var selectedBook = await dbContext.Books.SingleOrDefaultAsync(item => item.Id == id);
             if (selectedBook == null)
             {
-                return StatusCode(StatusCodes.Status404NotFound);
+                throw new ApiErrorException(ApiError.DataNotFound);
             }
             selectedBook.Title = param.Title;
             selectedBook.Date = param.Date;
@@ -107,7 +107,7 @@ namespace BasicWebAPI.Controllers
                 .SingleOrDefaultAsync();
             if (selectedBook == null)
             {
-                return StatusCode(StatusCodes.Status404NotFound);
+                throw new ApiErrorException(ApiError.DataNotFound.AddMessageParameter(id.ToString()));
             }
             return selectedBook;
         }
@@ -118,7 +118,7 @@ namespace BasicWebAPI.Controllers
             var selectedBook = await dbContext.Books.SingleOrDefaultAsync(item => item.Id == id);
             if (selectedBook == null)
             {
-                return StatusCode(StatusCodes.Status404NotFound);
+                throw new ApiErrorException(ApiError.DataNotFound);
             }
             dbContext.Remove(selectedBook);
             await this.dbContext.SaveChangesAsync();

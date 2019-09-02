@@ -17,6 +17,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;a&gt; elements.\n            </summary>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "a",
@@ -217,7 +218,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The name of the controller.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Page\" /> is non-<c>null</c>.\n            </remarks>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Controller"
@@ -231,7 +232,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The name of the area.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route\" /> is non-<c>null</c>.\n            </remarks>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Area"
@@ -245,7 +246,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The name of the page.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Action\" />, <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Controller\" />\n            is non-<c>null</c>.\n            </remarks>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Page"
@@ -259,7 +260,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The name of the page handler.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Action\" />, or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Controller\" />\n            is non-<c>null</c>.\n            </remarks>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "PageHandler"
@@ -273,7 +274,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The protocol for the URL, such as \"http\" or \"https\".\n            </summary>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Protocol"
@@ -287,7 +288,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The host name.\n            </summary>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Host"
@@ -301,7 +302,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The URL fragment name.\n            </summary>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Fragment"
@@ -315,7 +316,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            Name of the route.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if one of <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Action\" />, <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Controller\" />, <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Area\" /> \n            or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Page\" /> is non-<c>null</c>.\n            </remarks>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Route"
@@ -350,6 +351,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper\" /> implementation targeting &lt;cache&gt; elements.\n            </summary>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "cache",
@@ -542,6 +544,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper\" /> implementation targeting &lt;distributed-cache&gt; elements.\n            </summary>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "distributed-cache",
@@ -743,6 +746,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;environment&gt; elements that conditionally renders\n            content based on the current value of <see cref=\"P:Microsoft.AspNetCore.Hosting.IHostingEnvironment.EnvironmentName\" />.\n            If the environment is not listed in the specified <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper.Names\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper.Include\" />, \n            or if it is in <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.EnvironmentTagHelper.Exclude\" />, the content will not be rendered.\n            </summary>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "environment",
@@ -809,6 +813,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;button&gt; elements and &lt;input&gt; elements with\n            their <c>type</c> attribute set to <c>image</c> or <c>submit</c>.\n            </summary>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "button",
@@ -1514,6 +1519,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;form&gt; elements.\n            </summary>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "form",
@@ -1664,6 +1670,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;img&gt; elements that supports file versioning.\n            </summary>\n            <remarks>\n            The tag helper won't process for cases with just the 'src' attribute.\n            </remarks>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "img",
@@ -1733,6 +1740,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;input&gt; elements with an <c>asp-for</c> attribute.\n            </summary>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "input",
@@ -1836,6 +1844,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;label&gt; elements with an <c>asp-for</c> attribute.\n            </summary>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "label",
@@ -1883,6 +1892,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;link&gt; elements that supports fallback href paths.\n            </summary>\n            <remarks>\n            The tag helper won't process for cases with just the 'href' attribute.\n            </remarks>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "link",
@@ -2198,6 +2208,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;option&gt; elements.\n            </summary>\n            <remarks>\n            This <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> works in conjunction with <see cref=\"T:Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper\" />. It reads elements\n            content but does not modify that content. The only modification it makes is to add a <c>selected</c> attribute\n            in some cases.\n            </remarks>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "option",
@@ -2236,6 +2247,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            Renders a partial view.\n            </summary>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "partial",
@@ -2353,6 +2365,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;script&gt; elements that supports fallback src paths.\n            </summary>\n            <remarks>\n            The tag helper won't process for cases with just the 'src' attribute.\n            </remarks>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "script",
@@ -2608,6 +2621,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;select&gt; elements with <c>asp-for</c> and/or\n            <c>asp-items</c> attribute(s).\n            </summary>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "select",
@@ -2699,6 +2713,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;textarea&gt; elements with an <c>asp-for</c> attribute.\n            </summary>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "textarea",
@@ -2760,6 +2775,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting any HTML element with an <c>asp-validation-for</c>\n            attribute.\n            </summary>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "span",
@@ -2807,6 +2823,7 @@
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
         "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting any HTML element with an <c>asp-validation-summary</c>\n            attribute.\n            </summary>\n        ",
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "div",
@@ -2854,6 +2871,7 @@
         "AssemblyName": "Microsoft.AspNetCore.SpaServices",
         "Documentation": null,
         "TagOutputHint": null,
+        "CaseSensitive": false,
         "TagMatchingRules": [
           {
             "TagName": "*",
@@ -2938,205 +2956,9 @@
         }
       }
     ],
-    "CSharpLanguageVersion": 703
+    "CSharpLanguageVersion": 800
   },
   "RootNamespace": "BasicWebAPI",
-  "Documents": [
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/SetPassword.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/SetPassword.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Lockout.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Lockout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Pages/Shared/_LoginPartial.cshtml",
-      "TargetPath": "Pages/Shared/_LoginPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Register.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Register.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/ConfirmEmail.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/ConfirmEmail.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Pages/_ViewStart.cshtml",
-      "TargetPath": "Pages/_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/LoginWith2fa.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/LoginWith2fa.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Pages/Shared/_Layout.cshtml",
-      "TargetPath": "Pages/Shared/_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Pages/Shared/_CookieConsentPartial.cshtml",
-      "TargetPath": "Pages/Shared/_CookieConsentPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/_ViewImports.cshtml",
-      "TargetPath": "Areas/Identity/Pages/_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Pages/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Pages/Shared/_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/ExternalLogin.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/ExternalLogin.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Error.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Logout.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Logout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/_Layout.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/AccessDenied.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/AccessDenied.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/Index.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Pages/_ViewImports.cshtml",
-      "TargetPath": "Pages/_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/PersonalData.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/PersonalData.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/_ViewStart.cshtml",
-      "TargetPath": "Areas/Identity/Pages/_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Login.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/_ViewImports.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/ResetPassword.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/ResetPassword.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "Areas/Identity/Pages/Account/ForgotPassword.cshtml",
-      "TargetPath": "Areas/Identity/Pages/Account/ForgotPassword.cshtml",
-      "FileKind": "mvc"
-    }
-  ],
-  "SerializationFormat": "0.1"
+  "Documents": [],
+  "SerializationFormat": "0.2"
 }

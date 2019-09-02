@@ -9,6 +9,7 @@ using BasicWebAPI.Models.Entity;
 using Microsoft.AspNetCore.Http;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BasicWebAPI.Controllers
 {
@@ -70,6 +71,7 @@ namespace BasicWebAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<BookView>>> Post([FromBody] BookView param)
         {
             var newBook = new Book {
@@ -82,6 +84,7 @@ namespace BasicWebAPI.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<BookView>>> Put([FromRoute]int id, [FromBody] BookView param)
         {
             var selectedBook = await dbContext.Books.SingleOrDefaultAsync(item => item.Id == id);
@@ -113,6 +116,7 @@ namespace BasicWebAPI.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize]
         public async Task<ActionResult<IEnumerable<BookView>>> Delete([FromRoute]int id)
         {
             var selectedBook = await dbContext.Books.SingleOrDefaultAsync(item => item.Id == id);

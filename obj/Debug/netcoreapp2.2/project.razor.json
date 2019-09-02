@@ -15,7 +15,7 @@
         "Kind": "ITagHelper",
         "Name": "Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper",
         "AssemblyName": "Microsoft.AspNetCore.Mvc.TagHelpers",
-        "Documentation": null,
+        "Documentation": "\n            <summary>\n            <see cref=\"T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper\" /> implementation targeting &lt;a&gt; elements.\n            </summary>\n        ",
         "TagOutputHint": null,
         "TagMatchingRules": [
           {
@@ -203,7 +203,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": null,
             "IndexerTypeName": null,
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            The name of the action method.\n            </summary>\n            <remarks>\n            Must be <c>null</c> if <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route\" /> or <see cref=\"P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Page\" /> is non-<c>null</c>.\n            </remarks>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "Action"
@@ -329,7 +329,7 @@
             "IsEnum": false,
             "IndexerNamePrefix": "asp-route-",
             "IndexerTypeName": "System.String",
-            "Documentation": null,
+            "Documentation": "\n            <summary>\n            Additional parameters for the route.\n            </summary>\n        ",
             "Diagnostics": [],
             "Metadata": {
               "Common.PropertyName": "RouteValues"
@@ -2941,6 +2941,202 @@
     "CSharpLanguageVersion": 703
   },
   "RootNamespace": "BasicWebAPI",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/SetPassword.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/SetPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Lockout.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Lockout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages/Shared/_LoginPartial.cshtml",
+      "TargetPath": "Pages/Shared/_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/Disable2fa.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/ResetAuthenticator.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Register.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/DownloadPersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/GenerateRecoveryCodes.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/ConfirmEmail.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/ConfirmEmail.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages/_ViewStart.cshtml",
+      "TargetPath": "Pages/_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/LoginWith2fa.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/LoginWith2fa.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages/Shared/_Layout.cshtml",
+      "TargetPath": "Pages/Shared/_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages/Shared/_CookieConsentPartial.cshtml",
+      "TargetPath": "Pages/Shared/_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/ExternalLogins.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/EnableAuthenticator.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/_ViewImports.cshtml",
+      "TargetPath": "Areas/Identity/Pages/_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages/Shared/_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/ExternalLogin.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/ExternalLogin.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Error.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Logout.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Logout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/_Layout.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/AccessDenied.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/AccessDenied.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/Index.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Pages/_ViewImports.cshtml",
+      "TargetPath": "Pages/_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/PersonalData.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/PersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/_ViewStart.cshtml",
+      "TargetPath": "Areas/Identity/Pages/_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Login.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/TwoFactorAuthentication.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/_ViewImports.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/Manage/DeletePersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/ResetPassword.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/ResetPassword.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "Areas/Identity/Pages/Account/ForgotPassword.cshtml",
+      "TargetPath": "Areas/Identity/Pages/Account/ForgotPassword.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.1"
 }
